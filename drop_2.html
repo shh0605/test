@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>나혼자_드롭다운</title>
+    <style media="screen">
+      *{margin: 0; padding: 0;}
+      li{list-style: none;}
+      .menu{width: 800px; height: 40px; margin: 0 auto;}
+      .main li{
+        width: 200px;
+        line-height: 40px;
+        vertical-align: middle;
+        background: blue;
+        float: left;
+        position: relative;
+        text-align: center;
+      }
+      .sub{position: absolute; display: none;}
+      .sub li{background: pink;}
+
+      .main li:hover{background: red;}
+      .main li:hover .sub{display: block;}
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <ul>
+        드롭다운
+      </ul>
+    </header>
+    <nav class="menu">
+      <ul class="main">
+        <li>son
+          <ul class="sub">
+            <li>hagy</li>
+            <li>silta</li>
+            <li>jungmar</li>
+          </ul>
+        </li>
+
+        <li>jeong</li>
+
+        <li>been</li>
+
+        <li>sson</li>
+      </ul>
+    </nav>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+<html>
+  <head>
+      <style>
+        *{margin: 0; padding: 0;}
+
+        li{list-style: none;}
+
+        h1{text-align: center;}
+
+        nav{width: 610px; height: 30px; margin: 0 auto; background: #486AAE;}
+
+        .main li{float: left; border: 1px solid white;
+          width: 80px;
+          padding: 4px 20px;
+          position: relative;
+          text-align: center;
+          color: white;
+        }
+
+        .sub{position: absolute; top: 99%; left: 0; display: none;}
+
+        .sub li{width: 109px; border: 1px solid #486AAE;
+          font-size: 13px;
+          text-align: left;
+          color: #486AAE;
+          background: #F6FFCC;
+          padding: 5px 5px;
+        }
+
+        h1:hover{color: coral;}
+        .main li:hover{background: #489CFF;}
+        .main li:hover .sub{display: block;}
+
+      </style>
+  </head>
+  <body>
+    <h1>드롭다운 메뉴</h1>
+
+    <nav>
+      <ul class="main">
+        <li>Home
+          <ul class="sub">
+            <li>HTML DropDown</li>
+            <li>DHTML DropDown menu</li>
+            <li>JavaScript DropDown</li>
+            <li>DropDown Menu</li>
+            <li>CSS DropDown</li>
+          </ul>
+        </li>
+        <li>Download</li>
+        <li>Order</li>
+        <li>Help</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+  </body>
+</html>
